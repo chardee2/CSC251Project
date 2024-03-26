@@ -76,16 +76,16 @@ public class Policy{
     }
 
     //instance methods
-    public int calcBMI(){
-        int bmi;
+    public double calcBMI(){
+        double bmi;
         bmi = (weight * 703) / Math.pow(height,2);
-        return Math.ceil(bmi);
+        return bmi;
     }
     public double calcPolicyPrice(){
         double price = 0;
         final int baseFee = 600;
         final int smokerFee = 100;
-        int bmi = calcBMI();
+        double bmi = calcBMI();
         price += baseFee; //sets the base price to 600
 
         //adds smoker's fee
