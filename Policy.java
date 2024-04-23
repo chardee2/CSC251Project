@@ -19,14 +19,9 @@ public class Policy{
         policyNum = pn;
         providerName = providerN;
         policyHolder = new PolicyHolder(polHolder);
-    }
-    /**
-     * This constructor increments how many instances of policy class have been created 
-     */
-    public Policy(){
         numOfPolicies++;
-    }
 
+    }
     //setter methods
     /**
      * method that sets the policy number

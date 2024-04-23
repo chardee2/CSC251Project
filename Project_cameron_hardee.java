@@ -74,7 +74,11 @@ public class Project_cameron_hardee {
 
 
        }
-     
+       
+       int objectCount = policies.get(2).getNumOfPolicies();
+
+       System.out.println("A total of " + objectCount + " objects were created. ");
+
        System.out.println("\nThe number of policies with a smoker is: " + totalSmokers);
        System.out.println("\nThe number of policies with a non-smoker is: " + totalNonSmokers);
     }   
